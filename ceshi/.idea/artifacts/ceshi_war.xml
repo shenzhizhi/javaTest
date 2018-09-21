@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ceshi:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="ceshi.war">
+      <element id="artifact" artifact-name="ceshi:war exploded" />
+    </root>
+  </artifact>
+</component>
