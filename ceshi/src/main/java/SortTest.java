@@ -6,41 +6,7 @@ import java.util.function.UnaryOperator;
 
 public class SortTest {
     public static void main(String[] args) {
-//        ArrayList<Integer> s1=new ArrayList<>();
-//        s1.add(1);
-//        s1.add(2);
-//        s1.add(3);
-//
-//        ArrayList<Integer> s2 =new ArrayList<>();
-//        s2.add(2);
-//
-//        s1.removeAll(s2);
-//        for(Integer i : s1){
-//            System.out.println(i);
-//        }
-//        System.out.println(s1.retainAll(s2));
-//
-//        ListIterator<Integer> ls=s1.listIterator();
-//        Iterator<Integer> ii=s1.iterator();
-//
-//        ArrayList<Integer> s3=(ArrayList<Integer>) s1.subList(1,2);
-//
-//        s1.removeIf(Integer -> Integer>3);
-//
-//        s1.forEach(Integer -> System.out.println(Integer));
-//
-//        s1.sort(new MyComparator());
-//        for(Integer i:s1){
-//            System.out.println(i);
-//        }
 
-        //插入排序
-//        int []a ={2,3,1,5,2};
-//        insertsort(a);&& a[min]<a[j]
-//        show(a);
-
-
-        //快速排序
         int[] a = {5, 2, 6,4,1,8,7};
 //        bubblesort(a);
 //        quicksort(a, 0, a.length - 1);
@@ -56,17 +22,11 @@ public class SortTest {
         }
     }
 
-
-
-
-
-
-
     //1:bubblesort :i j
     //错误：j的范围写错了，j+1的时候超出范围
     public static void bubblesort(int[] a) {
         for(int i=0;i<a.length-1;i++){
-            for(int j=0;j<a.length-1;j++){
+            for(int j=0;j<a.length-1-i;j++){
                 if(a[j]>a[j+1]){
                     int temp=a[j];
                     a[j]=a[j+1];
@@ -87,16 +47,16 @@ public class SortTest {
         int key=a[left];
 
         while(left<right){
-            while(left<right && key<=a[right]){
+            while(left<right && a[right]>=key){
                 right--;
             }
             if(key>=a[right]){
                 a[left]=a[right];
             }
-            while(left<right && key >=a[left]){
+            while(left<right && a[left]<=key){
                 left++;
             }
-            if(key <=a[left]){
+            if(key<=a[left]){
                 a[right]=a[left];
             }
         }
@@ -108,21 +68,20 @@ public class SortTest {
     //3:insertsort : leftindex
     //错误：忘记排序原理，忘记双层循环
     public static void insertsort(int[] a) {
-
         for(int index=1;index<a.length;index++){
             int leftindex=index-1;
             int temp=a[index];
-            while(leftindex>=0 && temp<=a[leftindex]){
+            while(leftindex>=0 && a[leftindex]>temp){
                 a[leftindex+1]=a[leftindex];
                 leftindex--;
             }
             a[leftindex+1]=temp;
         }
-
     }
 
     //4:selectionsort:min
     //错误：移动指针应该不在if判断中
+    //min是跟i交换而不是跟j交换，每次都把一个最小的交换到最左边，如果刚好i就是min，就不用交换
     public static void selectionsort(int[] a) {
         for(int i=0;i<a.length;i++){
             int min=i;
@@ -133,7 +92,7 @@ public class SortTest {
                 }
                 j++;
             }
-            if(min !=i){
+            if(min!=i){
                 int temp=a[i];
                 a[i]=a[min];
                 a[min]=temp;
@@ -143,24 +102,3 @@ public class SortTest {
     }
 }
 
-
-
-
-
-
-
-/*
-class MyComparator implements Comparator<Integer> {
-    @Override
-    public int compare(Integer o1, Integer o2) {
-        int result;
-        if (o1 > o2) {
-            result = -1;
-        } else if (o1 == o2) {
-            result = 0;
-        } else {
-            result = 1;
-        }
-        return result;
-    }
-}*/
