@@ -7,6 +7,13 @@ import java.util.function.UnaryOperator;
 public class SortTest {
     public static void main(String[] args) {
 
+        /**
+         *无答案版本号
+         * 60144538f6453faa5bf72540fef38b6773ad124b
+         */
+
+
+
         int[] a = {5, 2, 6,4,1,8,7};
         bubblesort(a);
 //        quicksort(a, 0, a.length - 1);
