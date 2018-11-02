@@ -1,0 +1,33 @@
+html:文件外壳
+head：文件头，相当于文件说明
+body：文件体，真正的文件内容
+=====
+em：
+strong
+span 
+h1 
+p
+q 
+blockquote
+br
+&nbsp;
+hr
+address
+code
+pre多行
+ul-li
+ol-li
+div
+table tbody tr th td
+tr=row th=head td=data
+summary
+caption
+a href title target=_blank href="mailto=xxx@qq.com?subject=xxx&body=xxx"
+img src alt title
+form method action
+input type(text,password,radio,checkbox,submit,reset) name value
+	checked="checked" default 。同一组名字都要一样
+label(for)
+textarea rows cols
+select（multiple="multiple"） option（value selected）
+===========================================
