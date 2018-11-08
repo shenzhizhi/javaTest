@@ -1,0 +1,48 @@
+﻿<link href="style.css" rel="stylesheet" type="text/css" />
+href是路径 rel规定了当前文档与被连接文档之间的关系 type规定被连接文档的mime类型
+
+内联式>嵌入式>外部式。就近原则
+
+.类选择名称{css样式代码}
+元素加上 class属性 
+
+ID选择器
+#ID选择器{css样式代码}
+元素加上 id属性
+
+
+.foot > li 子选择器，表示class为foot的元素的子元素
+包含（后代）选择器
+.first span{color:red;} 表示class为first的后代中的所有span
+
+>作用于该元素的第一代后代， 空格作用于元素的所有后代，就是有递归的意思
+
+伪类选择器
+a:hover{} 表示鼠标悬停，只是元素的一种状态
+
+关于水平居中：
+行内元素：通过设置父元素 text-align:center (设置文字排列方式)
+定宽块级元素：当一个块级元素满足（定宽+左右外边距为auto）则该元素可以为居中
+不定宽块状元素：
+    放入table中：其实table可以算是定宽块元素，所以把元素放进去，在设置table的外边距左右为auto，（table的宽度是内容的长度）
+    把块级元素变为行级元素：把元素变成行级元素，再设置父元素的属性text-align：center （会把元素变成行级元素，少了一些功能）
+    float结合relative：把块级元素浮动到左边（清空起点）。设置相对定位relative（相对0起点进行偏移）。
+
+垂直居中：
+父元素高度确定的单行文本:设置文本行高跟父元素的高度一样
+父元素高度确定的多行文本：
+	使用table的td：把inline-block元素放在table的td内，因为td自带vertical-align-middle属性，所有就实现了垂直居中
+	强制把父元素变成td属性，IE6,7不兼容：父元素设置成display：table-cell，再加上vertical-align:middle,其实是强行使用表格属性
+	
+隐形改变display类型：
+一个元素如果被设置了display：absolute，或者float：left/right，那这个元素就会变成inline-block形式。
+
+css/div命名：
+wrap外套：最外层
+header头部：头部
+main主要内容：主体内容
+main-left左侧：左侧布局
+main-right右侧：右侧布局
+nav导航条：网页菜单导航条
+content内容：网页中部主体
+footer：底部
