@@ -2,11 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="0.3">
     <title>float</title>
     <style>
-        /*th{*/
-            /*float:left;*/
-        /*}*/
+
         span{
             border: 1px solid #CECECE;
             background-color: #F0F0F0;
@@ -18,9 +17,97 @@
             height: 27px;
             display: inline-block;
         }
+        .box{
+            border:20px black solid;
+            width: 50%;
+            padding:0 20px;
+            height:100px;
+            background-color: #CECECE;
+            box-sizing:border-box;
+            overflow:auto;
+        }
+        .a{
+            height: 200px;
+            width: 100px;
+            border:red 10px solid;
+            box-sizing:content-box;
+            position:relative;
+        }
+        .b{
+            width: 100px;
+            height: 100px;
+            border:green 10px solid;
+            box-sizing: border-box;
+            position:absolute;
+            top:25%;
+        }
+        .image1{
+            width: 100px;
+            height: 100px;
+            padding:20px;
+            border:20px rgba(0,0,0,0.5) solid ;
+            background-image: url("1111.jpg");
+            /*background-size: cover;*/
+            /*background-clip: content-box;*/
+            background-position: center;
+            background-size: 180px;
+
+        }
+        .image2{
+            width: 100px;
+            height: 100px;
+            padding:20px;
+            border:20px rgba(0,0,0,0.5) solid ;
+            background-image: url("1111.jpg");
+            /*background-size: cover;*/
+            background-clip: content-box;
+            background-position: center;
+            background-size: 180px;
+
+        }
+        .image3{
+            width: 100px;
+            height: 100px;
+            padding:20px;
+            border:20px rgba(0,0,0,0.5) solid ;
+            background-image: url("1111.jpg");
+            /*background-size: cover;*/
+            background-clip: padding-box;
+            background-position: center;
+            background-size: 180px;
+
+        }
+        .image1:hover{
+            outline:2px black solid;
+        }
+        .d1{
+            border:1px black solid;
+        }
+        .d11{
+            margin:3px;
+            border:1px black solid;
+        }
+        .d12{
+            margin:3px;
+            border:1px black solid;
+        }
+        .d13{
+            margin:3px;
+            border:1px black solid;
+        }
+        .sp1{
+            display: block;
+        }
+        .sp2{
+            display: inline;
+        }
+        .sp3{
+            display: inline-block;
+        }
     </style>
 </head>
 <body>
+    如何让表头垂直显示
     <table>
         <tbody>
             <tr>
@@ -52,5 +139,42 @@
             </tr>
         </tbody>
     </table>
+    <hr>
+    以盒子长度为准，就是设定了盒子长度后，边框和内边距都会被放在盒子里
+    <div class="box">
+asdaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+    </div>
+    <hr>
+    块在另一个块中垂直居中，并且内外贴合
+    <div class="a">
+        <!--qqqqqqqqqqqqqqqqqqqqqqq-->
+        <div class="b">
+            <!--aaaaaaaaaaaaaaaaaaaa-->
+        </div>
+    </div>
+    <hr>
+
+    <hr>
+    背景图裁剪范围
+    <div class="image1">
+    </div>
+    <div class="image2">
+    </div>
+    <div class="image3">
+    </div>
+
+    <hr>
+    inline block inline-block的三种不同的呈现
+    <div class="d1">
+        <div class="d11">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Mauris tempus turpis id ante mollis dignissim.
+            <span class="sp1">Nam sed dolor non tortor</span>  lacinia lobortis id dapibus nunc.</div>
+        <div class="d12">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Mauris tempus turpis id ante mollis dignissim.
+            <span class="sp2">Nam sed dolor non tortor</span> x lacinia lobortis id dapibus nunc.</div>
+        <div class="d13">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Mauris tempus turpis id ante mollis dignissim.
+            <span class="sp3">Nam sed dolor non tortor</span>xlacinia lobortis id dapibus nunc.</div>
+    </div>
 </body>
 </html>
