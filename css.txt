@@ -46,7 +46,15 @@ nav导航条：网页菜单导航条
 content内容：网页中部主体
 footer：底部
 
+框模型：
+====
 想让一个div以边框为准，就设置box-sizing：border-box
 想以内容为准：设置box-sizing：content-box
+====
+背景裁剪，以什么为准：
+background-clip：border-box，显示到边框
+background-clip：padding-box，显示到内间距
+background-clip：content，显示到内容	
 
 overflow溢出内容处理
+
