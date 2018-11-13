@@ -1,0 +1,16 @@
+水平居中：
+	行内元素的居中：父元素设置text-align
+	定宽块级元素的居中：设置margin：0 auto
+	不定宽块级元素的居中：
+		放在table的td中，因为table默认有宽度
+		改成行级元素display：inline，再设置父元素text-align：0 auto，
+		浮动到左边，再relative，再向右偏移50%，再向左偏移50%，需要3层嵌套。
+垂直居中：
+	行级元素（单行）的居中：设置行高=父元素高度
+	行级元素（多行）的居中：
+		设置成inline-block，放在table的td里，因为td有vertical-align：middle属性
+		把父元素变成td属性：display：table-cell 再加上vertical-align：middle属性
+	定宽块级元素的居中:
+		？？？？？
+	
+	
