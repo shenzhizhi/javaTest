@@ -56,11 +56,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="11-13.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/百度前端学院task/11-13.html">
+      <file leaf-file-name="11-14.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/百度前端学院task/11-14.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="44" lean-forward="false" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
+            <state relative-caret-position="255">
+              <caret line="81" column="30" lean-forward="true" selection-start-line="81" selection-start-column="30" selection-end-line="81" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -175,6 +175,7 @@
         <option value="$PROJECT_DIR$/src/main/webapp/百度前端学院task/浮动实现.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/百度前端学院task/行内块实现.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/百度前端学院task/11-13.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/百度前端学院task/11-14.html" />
       </list>
     </option>
   </component>
@@ -542,12 +543,12 @@
       <workItem from="1540861723731" duration="19635000" />
       <workItem from="1541383311484" duration="26256000" />
       <workItem from="1541991918953" duration="16507000" />
-      <workItem from="1542093431363" duration="3919000" />
+      <workItem from="1542093431363" duration="10181000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="286966000" />
+    <option name="totallyTimeSpent" value="293228000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -648,105 +649,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="uml://JAVA/java.util.LinkedList">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>java.util.LinkedList</OriginalElement>
-          <nodes>
-            <node x="765.0" y="2171.5">java.lang.Cloneable</node>
-            <node x="0.0" y="827.0">java.util.AbstractCollection</node>
-            <node x="326.0" y="666.0">java.util.List</node>
-            <node x="336.5" y="149.0">java.util.Collection</node>
-            <node x="71.25" y="1528.0">java.util.AbstractList</node>
-            <node x="673.0" y="919.0">java.util.Queue</node>
-            <node x="604.5" y="1390.0">java.util.Deque</node>
-            <node x="494.73214285714283" y="2332.0">java.util.LinkedList</node>
-            <node x="71.25" y="2091.0">java.util.AbstractSequentialList</node>
-            <node x="349.5" y="0.0">java.lang.Iterable</node>
-            <node x="601.9535714285714" y="2171.5">java.io.Serializable</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="java.util.AbstractSequentialList" target="java.util.AbstractList">
-              <point x="0.0" y="-95.5" />
-              <point x="0.0" y="187.5" />
-            </edge>
-            <edge source="java.util.LinkedList" target="java.util.Deque">
-              <point x="65.39999999999999" y="-475.0" />
-              <point x="723.6321428571428" y="2307.0" />
-              <point x="754.5" y="2307.0" />
-              <point x="0.0" y="325.5" />
-            </edge>
-            <edge source="java.util.LinkedList" target="java.util.List">
-              <point x="-65.39999999999998" y="-475.0" />
-              <point x="592.8321428571428" y="2307.0" />
-              <point x="571.25" y="2307.0" />
-              <point x="81.75" y="337.0" />
-            </edge>
-            <edge source="java.util.AbstractList" target="java.util.AbstractCollection">
-              <point x="-81.75" y="-187.5" />
-              <point x="0.0" y="176.0" />
-            </edge>
-            <edge source="java.util.Queue" target="java.util.Collection">
-              <point x="0.0" y="-84.0" />
-              <point x="754.5" y="641.0" />
-              <point x="591.5" y="641.0" />
-              <point x="102.0" y="233.5" />
-            </edge>
-            <edge source="java.util.LinkedList" target="java.lang.Cloneable">
-              <point x="130.79999999999995" y="-475.0" />
-              <point x="789.0321428571428" y="2307.0" />
-              <point x="818.0" y="2307.0" />
-              <point x="0.0" y="15.0" />
-            </edge>
-            <edge source="java.util.LinkedList" target="java.io.Serializable">
-              <point x="0.0" y="-475.0" />
-              <point x="0.0" y="15.0" />
-            </edge>
-            <edge source="java.util.List" target="java.util.Collection">
-              <point x="0.0" y="-337.0" />
-              <point x="0.0" y="233.5" />
-            </edge>
-            <edge source="java.util.AbstractList" target="java.util.List">
-              <point x="81.75" y="-187.5" />
-              <point x="316.5" y="1365.0" />
-              <point x="407.75" y="1365.0" />
-              <point x="-81.75" y="337.0" />
-            </edge>
-            <edge source="java.util.Collection" target="java.lang.Iterable">
-              <point x="0.0" y="-233.5" />
-              <point x="0.0" y="49.5" />
-            </edge>
-            <edge source="java.util.Deque" target="java.util.Queue">
-              <point x="0.0" y="-325.5" />
-              <point x="0.0" y="84.0" />
-            </edge>
-            <edge source="java.util.LinkedList" target="java.util.AbstractSequentialList">
-              <point x="-130.79999999999995" y="-475.0" />
-              <point x="527.4321428571428" y="2307.0" />
-              <point x="234.75" y="2307.0" />
-              <point x="0.0" y="95.5" />
-            </edge>
-            <edge source="java.util.AbstractCollection" target="java.util.Collection">
-              <point x="0.0" y="-176.0" />
-              <point x="153.0" y="641.0" />
-              <point x="387.5" y="641.0" />
-              <point x="-102.0" y="233.5" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="0.145366444579043" x="453.0" y="1641.0" />
-          <SelectedNodes>
-            <node>java.util.List</node>
-          </SelectedNodes>
-          <Categories>
-            <Category>Methods</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>public</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/Iterator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
@@ -1095,6 +997,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="326">
           <caret line="78" column="14" lean-forward="false" selection-start-line="78" selection-start-column="14" selection-end-line="78" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1168,14 +1071,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/百度前端学院task/行内块实现.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="32" lean-forward="false" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/百度前端学院task/浮动实现.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="344">
@@ -1186,8 +1081,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/百度前端学院task/11-13.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="44" lean-forward="false" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
+        <state relative-caret-position="551">
+          <caret line="29" column="19" lean-forward="true" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/百度前端学院task/行内块实现.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="32" lean-forward="false" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/百度前端学院task/11-14.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="81" column="30" lean-forward="true" selection-start-line="81" selection-start-column="30" selection-end-line="81" selection-end-column="30" />
           <folding />
         </state>
       </provider>

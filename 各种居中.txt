@@ -9,8 +9,10 @@
 	行级元素（单行）的居中：设置行高=父元素高度
 	行级元素（多行）的居中：
 		设置成inline-block，放在table的td里，因为td有vertical-align：middle属性
-		把父元素变成td属性：display：table-cell 再加上vertical-align：middle属性
+		把父元素变成td属性：display：table-cell 再加上vertical-align：middle属性（适用于不定高块级元素）
 	定宽块级元素的居中:
-		？？？？？
+		父元素relative，子元素absolute，top：50% left：50%，这样子元素的左上角就会在中心点，为了让整体居中，可以外边距修正：margin-top：-height/2 margin-left:-width/2
+		也可以直接设置外边距全部为auto，4个方向偏移量全部是0，top，left，bottom，right：0 margin：auto
+
 	
 	
