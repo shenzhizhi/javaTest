@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>左侧固定右侧自适应</title>
+    <meta http-equiv="refresh" content="1"/>
+    <style>
+        html,body{
+            margin:0;
+            height:100%;
+        }
+        #left{
+            position:absolute;
+            top:0;
+            width: 200px;
+            height: 100%;
+        }
+        #right{
+            position:absolute;
+            top:0;
+            width: 200px;
+            height: 100%;
+        }
+        #left{
+            left:0;
+            background: #a0b3d6;
+        }
+        #right{
+            right:0;
+            background: #b6f2e3;
+        }
+        #main{
+            margin:0 200px;
+            background: #ffe6b8;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="left"></div>
+    <div id="main"></div>
+    <div id="right"></div>
+</body>
+</html>
