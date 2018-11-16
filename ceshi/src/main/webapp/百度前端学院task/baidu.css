@@ -6,7 +6,7 @@ html,body{
     background: url("image/back1.png") 100% 100%;
     background-size: cover;
     width: 100%;
-    height:1390px;
+    height:1190px;
 
 }
 .hello{
@@ -88,7 +88,7 @@ font-size:16px;
 
 #page2{
     width: 100%;
-    height:1390px;
+    height:990px;
     text-align: center;
 
 }
@@ -98,15 +98,18 @@ font-size:16px;
 }
 .ready{
     font-weight: lighter;
-    width: 40%;
+    width: 400px;
     font-size:50px;
     padding: 40px 0;
     margin:0 auto;
 }
 .four{
-    width: 60%;
+    width: 970px;
     text-align: center;
     margin:100px auto;
+    display: flex;
+    flex-wrap: wrap;
+
 }
 .four:after{
     content:'';
@@ -114,11 +117,8 @@ font-size:16px;
     clear:both;
 }
 .four-son{
-    width:35%;
-    float:left;
-    display: table-cell;
-    padding: 0 auto;
-    /*four-son无法居中*/
+    width:400px;
+    margin:0 auto;
 
 }
 .four-img{
@@ -139,4 +139,10 @@ font-size:16px;
 }
 .four-content{
     font-weight:lighter;
+}
+#page3{
+    background: url("image/back2.png") 100% 100%;
+    background-size: cover;
+    width: 100%;
+    height:1190px;
 }

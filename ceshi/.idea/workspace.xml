@@ -16,21 +16,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="11-15.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="11-15.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/百度前端学院task/11-15.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+            <state relative-caret-position="659">
+              <caret line="71" column="14" lean-forward="true" selection-start-line="71" selection-start-column="14" selection-end-line="71" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="baidu.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="baidu.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/百度前端学院task/baidu.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="29" column="4" lean-forward="false" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
+            <state relative-caret-position="122">
+              <caret line="115" column="19" lean-forward="true" selection-start-line="115" selection-start-column="19" selection-end-line="115" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ceshi.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/百度前端学院task/ceshi.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="22" column="6" lean-forward="true" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -106,8 +116,9 @@
         <option value="$PROJECT_DIR$/src/main/webapp/百度前端学院task/行内块实现.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/百度前端学院task/11-13.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/百度前端学院task/11-14.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/百度前端学院task/11-15.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/百度前端学院task/baidu.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/百度前端学院task/ceshi.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/百度前端学院task/11-15.html" />
       </list>
     </option>
   </component>
@@ -166,8 +177,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -233,8 +246,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -486,12 +497,13 @@
       <workItem from="1541383311484" duration="26256000" />
       <workItem from="1541991918953" duration="16507000" />
       <workItem from="1542093431363" duration="18361000" />
-      <workItem from="1542268009235" duration="5801000" />
+      <workItem from="1542268009235" duration="6172000" />
+      <workItem from="1542332044514" duration="7020000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="307209000" />
+    <option name="totallyTimeSpent" value="314600000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -519,7 +531,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3307436" sideWeight="0.4936034" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4037199" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41247264" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24945295" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -592,28 +604,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="uml://JAVA/java.util.Arrays">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>java.util.Arrays</OriginalElement>
-          <nodes>
-            <node x="0.0" y="0.0">java.util.Arrays</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="-9.0" y="800.0" />
-          <SelectedNodes>
-            <node>java.util.Arrays</node>
-          </SelectedNodes>
-          <Categories>
-            <Category>Methods</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/Arrays.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="206">
@@ -993,23 +983,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/百度前端学院task/ceshi.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="6" lean-forward="true" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/百度前端学院task/image/back1.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/百度前端学院task/11-15.html">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/百度前端学院task/baidu.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        <state relative-caret-position="122">
+          <caret line="115" column="19" lean-forward="true" selection-start-line="115" selection-start-column="19" selection-end-line="115" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/百度前端学院task/baidu.css">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/百度前端学院task/11-15.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="29" column="4" lean-forward="false" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
+        <state relative-caret-position="659">
+          <caret line="71" column="14" lean-forward="true" selection-start-line="71" selection-start-column="14" selection-end-line="71" selection-end-column="14" />
           <folding />
         </state>
       </provider>

@@ -1,0 +1,3 @@
+使用float：left可以实现div并列的效果，但是不知道怎么居中。
+
+对父元素使用display：flex，这个属性就变成flex盒子了。子元素就变成flex项目，对父元素使用flex-wrap:wrap，子元素就会在同一行堆积，宽度不够就自动换行。再设置margin就可以使子元素居中。
