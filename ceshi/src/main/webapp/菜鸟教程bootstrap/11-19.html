@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body>
+
+<!--自适应图片：img-responsive-->
+<img class="img-responsive" src="1.jpg" alt="11">
+
+<!--每一个row分为12个单位的长度，
+列的长度就可以用：长度为3的列为col-xs-3
+默认是自适应宽度并居中-->
+<div class="container">
+    <div class="row">
+        <div class="col-xs-4 text-center">asd</div>
+        <div class="col-xs-4 text-center">asd</div>
+        <div class="col-xs-4 text-center">asd</div>
+    </div>
+
+    <!--&lt;!&ndash;如果想偏移一个列 列长为6，往右偏移3&ndash;&gt;-->
+    <!--<div class="row">-->
+        <!--<div class="col-md-6 col-md-offset-3 text-center">asd</div>-->
+    <!--</div>-->
+</div>
+
+<!--嵌套列，将列分为2个子列-->
+<!--<div class="container">-->
+    <!--<div class="row">-->
+        <!--<div class="col-md-4 text-center">asd</div>-->
+        <!--<div class="col-md-4 text-center">-->
+            <!--asd-->
+            <!--<div class="row">-->
+                <!--&lt;!&ndash;这里的6单位是以父元素的长度为准&ndash;&gt;-->
+                <!--<div class="col-md-6">asd</div>-->
+                <!--<div class="col-md-6">asd</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+
+
+<!--表格格式：table-->
+<!--table-hover:鼠标悬停变色-->
+<!--table-bordered:所有单元格加上边框-->
+<!--table-striped：表格行间隔条纹-->
+
+<!--单元格的样式：-->
+<!--active：灰色-->
+<!--success：绿色-->
+<!--warning：警告-->
+<!--danger：红色-->
+<table class="table table-hover">
+    <tbody>
+        <tr>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+        </tr>
+        <tr>
+            <td>asd</td>
+            <td>qwe</td>
+            <td>zxc</td>
+        </tr><tr>
+            <td>asd</td>
+            <td>qwe</td>
+            <td>zxc</td>
+        </tr><tr>
+            <td>asd</td>
+            <td>qwe</td>
+            <td>zxc</td>
+        </tr><tr>
+            <td>asd</td>
+            <td>qwe</td>
+            <td>zxc</td>
+        </tr>
+
+    </tbody>
+</table>
+
+<!--基本表单结构-->
+<!--form元素加属性 role="form"-->
+<!--把标签和控件放在class="form-group"的div中-->
+<!--向所有的文本元素 input，textarea select添加form-control-->
+<!--为form加上form-horizontal,可以让每一个form-group都另起一行-->
+<!--输入框成功，id="inputSuccess" 输入警告，id="inputWarning" 输入错误 id="inputError"-->
+
+<!--控件大小-->
+<!--input-lg 大的-->
+<!--input-sm 小的-->
+
+<form class="form-horizontal" role="form">
+    <div class="form-group">
+        <label for="firstname" class="col-sm-2 control-label text-center">名字</label>
+        <div class="col-sm-5">
+            <input id="firstname" class="form-control" type="text">
+        </div>
+        <button type="submit" class="btn btn-default ">登录</button>
+    </div>
+
+    <div class="form-group">
+
+        <div class="col-sm-10">
+            <input type="text" class="form-control input-lg"  placeholder="大的">
+        </div>
+    </div>
+    <div class="form-group">
+
+        <div class="col-sm-10">
+            <input type="text" class="form-control"  placeholder="正常">
+        </div>
+    </div>
+    <div class="form-group">
+
+        <div class="col-sm-10">
+            <input type="text" class="form-control input-sm"  placeholder="小的">
+        </div>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-default col-sm-2 col-sm-offset-2">登录</button>
+    </div>
+</form>
+
+<!--按钮：btn-->
+<!--每一个按钮都要加上btn-->
+<!--默认按钮是btn-default,白色-->
+<!--原始按钮，btn-primary 蓝色-->
+<!--成功按钮， btn-success 绿色-->
+<!--信息，btn-info 浅蓝-->
+<!--警告 btn-warning 黄色-->
+<!--危险 btn-danger 红色-->
+
+<!--导航菜单：nav-->
+<!--菜单需要放在ul里，使用nav类-->
+<!--标签水平，nav-tabs-->
+<!--胶囊水平：nav-pills-->
+<!--垂直：再加上nav-stacked-->
+
+<!--带有下拉菜单的标签-->
+<!--在li中加一个class=dropdown-menu的属性。-->
+<!--再里面加一个ul 头部的data-toggle需要加上dropdown-->
+
+<ul class="nav nav-tabs ">
+    <li class="dropdown">
+        <a class="dropdown-taggle" data-toggle="dropdown" href="">asd</a>
+        <ul class="dropdown-menu">
+            <li><a href="">asd</a></li>
+            <li><a href="">asd</a></li>
+            <li><a href="">asd</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="">SVN</a>
+    </li>
+
+</ul>
+<br><br>
+<br>
+<br>
+
+
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
