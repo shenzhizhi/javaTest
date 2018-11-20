@@ -1,0 +1,66 @@
+<!--自适应图片：img-responsive-->
+
+<!--每一个row分为12个单位的长度，
+列的长度就可以用：长度为3的列为col-xs-3
+默认是自适应宽度并居中-->
+
+<!--如果想偏移一个列 列长为6，往右偏移3-->
+<div class="row">
+        <div class="col-md-6 col-md-offset-3 text-center">asd</div>
+    </div>
+
+嵌套列，将列分为2个子列
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 text-center">asd</div>
+        <div class="col-md-4 text-center">
+            asd
+            <div class="row">
+                <!--这里的6单位是以父元素的长度为准-->
+                <div class="col-md-6">asd</div>
+                <div class="col-md-6">asd</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--表格格式：table-->
+<!--table-hover:鼠标悬停变色-->
+<!--table-bordered:所有单元格加上边框-->
+<!--table-striped：表格行间隔条纹-->
+
+<!--单元格的样式：-->
+<!--active：灰色-->
+<!--success：绿色-->
+<!--warning：警告-->
+<!--danger：红色-->
+
+<!--基本表单结构-->
+<!--form元素加属性 role="form"-->
+<!--把标签和控件放在class="form-group"的div中-->
+<!--向所有的文本元素 input，textarea select添加form-control-->
+<!--为form加上form-horizontal,可以让每一个form-group都另起一行-->
+<!--输入框成功，id="inputSuccess" 输入警告，id="inputWarning" 输入错误 id="inputError"-->
+
+<!--控件大小-->
+<!--input-lg 大的-->
+<!--input-sm 小的-->
+
+<!--按钮：btn-->
+<!--每一个按钮都要加上btn-->
+<!--默认按钮是btn-default,白色-->
+<!--原始按钮，btn-primary 蓝色-->
+<!--成功按钮， btn-success 绿色-->
+<!--信息，btn-info 浅蓝-->
+<!--警告 btn-warning 黄色-->
+<!--危险 btn-danger 红色-->
+
+<!--导航菜单：nav-->
+<!--菜单需要放在ul里，使用nav类-->
+<!--标签水平，nav-tabs-->
+<!--胶囊水平：nav-pills-->
+<!--垂直：再加上nav-stacked-->
+
+<!--带有下拉菜单的标签-->
+<!--在li中加一个class=dropdown-menu的属性。-->
+<!--再里面加一个ul 头部的data-toggle需要加上dropdown-->
