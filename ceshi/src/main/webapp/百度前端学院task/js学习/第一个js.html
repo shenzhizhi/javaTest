@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--onclick事件，点击后会执行后面的代码-->
+<botton type="button" onclick="alert('Welcome!')">点击这里</botton>
+
+<input type="text" id="demo">
+<botton type="button" onclick="firstFunction()">qwe</botton>
+<p class="demo">asd</p>
+<script>
+    // 直接把html写到文档流中
+    document.write("<h1>asdasd</h1>");
+
+    // 修改元素的内容
+    var x=document.getElementById("demo");
+    x.innerHTML="Hello JavaScript";
+
+    //改变元素的属性
+    // x.src="xx/xx";
+
+    //修改style
+    // x.style.color="red";
+
+    //使用函数进行判断
+    function firstFunction() {
+        var x=document.getElementById("demo").value;
+        if(x=="" || isNaN(x)){
+            console.log("NOT NUMERIC");
+        }
+    }
+
+    // 声明数组跟给数组赋值分开。
+    var xx=new Array();
+    xx[0]="asd";
+    xx[1]="qwe";
+    xx[2]="zxc";
+
+    // 声明数组的同时赋值
+    var x2=new Array("asd","qwe","zxc");
+
+    // json格式的变量
+    var json={
+        firstname:"Bill",
+        lastname:"Gates",
+        id:5566
+    };
+
+    调用json格式变量的属性
+    document.write(json.firstname+"<br>/");
+    docunment.write(json["firstname"]+"<br/>");
+
+    // undefined是没有值，null有值，但值为空
+
+    function test(){
+        // 含有return语句时，函数会停止执行，并返回指定的值
+        // 也可以使用return；来退出函数。
+        return null;
+    }
+
+    // 分配一个值给一个未声明的变量，将会把该变量变成一个全局变量，无论他是不是在函数内进行
+    xxx="asd";
+
+    // 字符串与数字相加，结果将成为字符串
+    var s1=12+"asd";
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>IFE ECMAScript</title>
+</head>
+<body>
+<input id="first-number" type="number"  placeholder="第一个数字">
+<input id="second-number" type="number"  placeholder="第二个数字">
+<button onclick=add() id="add-btn">加</button>
+<button onclick=minus() id="minus-btn">减</button>
+<button onclick=times() id="times-btn">乘</button>
+<button onclick=divide() id="divide-btn">除</button>
+<p id="result">运算结果</p>
+<script>
+
+function add() {
+    // 用document获取的value获取出来的都是string，需要用parseInt转换一下。
+    var result=parseFloat(document.getElementById("first-number").value)+parseFloat(document.getElementById("second-number").value);
+
+    document.getElementById("result").innerHTML= result;
+
+}
+function minus() {
+    document.getElementById("result").innerHTML= "运算结果："+f1-l1;
+}
+function times() {
+    document.getElementById("result").innerHTML= "运算结果："+f1*l1;
+}
+function divide() {
+    document.getElementById("result").innerHTML= "运算结果："+f1/l1;
+}
+</script>
+</body>
+</html>
