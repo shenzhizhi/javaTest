@@ -1,35 +1,61 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <title>IFE ECMAScript</title>
+<head>        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
 <body>
-<input id="first-number" type="number"  placeholder="第一个数字">
-<input id="second-number" type="number"  placeholder="第二个数字">
-<button onclick=add() id="add-btn">加</button>
-<button onclick=minus() id="minus-btn">减</button>
-<button onclick=times() id="times-btn">乘</button>
-<button onclick=divide() id="divide-btn">除</button>
-<p id="result">运算结果</p>
+
+<div>
+    <div id="div1">
+        asdas
+        <button onclick="asd()">asd</button>
+    </div>
+</div>
 <script>
+    function asd() {
+        var child=document.getElementById("div1");
+        child.parentNode.removeChild(child);
+    }
+    // 输出当前时间
+    // console.log(new Date());
+    // // 设置具体日期
+    // var d=new Date();
+    // d.setFullYear(2018,11,28);
+    // document.write(d);
+    //
+    // // 把当前日期设置成string
+    // var d2=new Date();
+    // document.write(d2);
 
-function add() {
-    // 用document获取的value获取出来的都是string，需要用parseInt转换一下。
-    var result=parseFloat(document.getElementById("first-number").value)+parseFloat(document.getElementById("second-number").value);
+    var d3=new Date().toUTCString();
+    document.write(d3);
 
-    document.getElementById("result").innerHTML= result;
+    var d4=new Date();
+    d4.setDate(d4.getDate()+5);
 
-}
-function minus() {
-    document.getElementById("result").innerHTML= "运算结果："+f1-l1;
-}
-function times() {
-    document.getElementById("result").innerHTML= "运算结果："+f1*l1;
-}
-function divide() {
-    document.getElementById("result").innerHTML= "运算结果："+f1/l1;
-}
+    var myarray=new Array(3);
+    myarray[0]="asd";
+    myarray[1]="qwe";
+    myarray[2]="zxc";
+
+    var mycar=new Array("123","asd",true);
+
+    // 仅当参数是1,true,字符串时，boolean的值是true
+    var b1= new boolean();
+
+    // 四舍五入，负数先取绝对值再四舍五入
+    Math.round();
+    Math.random();
+    Math.max();
+    Math.min();
+
+    var patt1=new RegExp("e");
+    patt1.test("wer werl");
+    patt1.exec("qwe wer");
+    第二个参数可以有的值是i：单次匹配，g：全局匹配，m：执行多行匹配
+    patt1.exec("asd","i");
+    增加匹配参数
+    patt1.compile("x");
+
 </script>
 </body>
 </html>
