@@ -2,7 +2,7 @@
 <html>
 <head>        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
-<body>
+<body onload="checkCookie()">
 
 <div>
     <div id="div1">
@@ -10,8 +10,10 @@
         <button onclick="asd()">asd</button>
     </div>
 </div>
+
+<input type="button" value="加载新文档" onclick="newDoc()">
 <script>
-    function asd() {
+    /*function asd() {
         var child=document.getElementById("div1");
         child.parentNode.removeChild(child);
     }
@@ -51,10 +53,85 @@
     var patt1=new RegExp("e");
     patt1.test("wer werl");
     patt1.exec("qwe wer");
-    第二个参数可以有的值是i：单次匹配，g：全局匹配，m：执行多行匹配
+    // 第二个参数可以有的值是i：单次匹配，g：全局匹配，m：执行多行匹配
     patt1.exec("asd","i");
-    增加匹配参数
-    patt1.compile("x");
+    // 增加匹配参数
+    patt1.compile("x");*/
+
+   /* // 浏览器窗口的宽高
+    console.log(window.innerHeight);
+    console.log(window.innerWidth);
+    window.resizeTo();//调整大小
+    window.close();//关闭
+    window.open();//打开新窗口
+
+    //可用的窗口屏幕宽高
+    console/log(screen.availHeight);
+    console/log(screen.availWight);
+
+    window.hostname;//域名
+    window.pathname;//当前页面的路径和文件名
+    location.port;//web端口
+    location.protocol;//web协议
+    location.href;//当前页面url
+
+    //加载新文档
+    window.location.assign("http://www.w3school.com.cn");
+
+    //后退按钮和下一页按钮
+    window.history.back();
+    window.history.forwward();
+
+    alert();//警告框
+    alert("asd"+"\n"+"qwe");//换行
+    confirm("asd");//确认框，确定返回true，取消返回false
+    prompt("qwe");//显示提示框，确定返回输入的值，取消返回null
+
+    var t=setTimeout("javascript语句",ms);//设置后经过多少毫秒后执行该语句
+    clearTimeout(t);//取消定时
+*/
+    //cookie保存在系统中的时候是"cookie1=值1;cookie2=值2"
+    //document.cookie可以返回所有cookie字符串
+
+
+    function setCookie(c_name,value,expiredays) {
+        var exdate=new Date();
+        exdate.setDate(exdate.getDate()+expiredays);
+        document.cookie=c_name+"="+value+";expires="+exdate.toGMTString();
+    }
+
+    function getCookie(c_name) {
+        if(document.cookie.length>0){
+            var c_start,c_end;
+            c_start=document.cookie.indexOf(c_name+"=");
+            console.log(c_start);
+            //获取该cookie字符串的起始位置，加上=是为了防止某些cookie值中包含有cookie名字
+            if(c_start!=-1){//如果找不到该cookie就会返回-1
+                c_start=c_start+c_name.length+1; //将该其实位置移动到cookie值的起始
+                c_end=document.cookie.indexOf(";",c_start);//从值的起始位置c_start开始搜索，找到第一个;
+                if(c_end==-1){
+                    c_end=document.cookie.length; //如果找不到;说明只有一条cookie，那么索引就是该cookie的长度
+                }
+                console.log(document.cookie);
+                console.log(c_start);
+                console.log(c_end);
+                return document.cookie.substring(c_start,c_end); //返回cookie的值
+            }
+        }
+        return "";
+    }
+    
+    function checkCookie() {
+        var username=getCookie('username');
+        if(username!=null && username!=""){
+            alert("welcome again "+username);
+        }else{
+            username=prompt("enter your name","");//对话框显示的文本，后面是默认的输入文本。
+            if(username!=null && username!=""){
+                setCookie('username',username,365);
+            }
+        }
+    }
 
 </script>
 </body>
