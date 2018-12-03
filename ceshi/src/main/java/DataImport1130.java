@@ -16,8 +16,8 @@ import javax.print.Doc;
 
 public class DataImport1130 {
     public static void main(String[] args) throws Exception {
-        File file=new File("C:\\Users\\NFYX\\Desktop\\准备测试导入sql的深圳科室跟医生.xls");
 
+        File file=new File("C:\\Users\\NFYX\\Desktop\\准备测试导入sql的深圳科室跟医生.xls");
         List<Doctor> doctorList =readFromExcelDoctor(file);
         StringBuffer result=new StringBuffer();
         for(Doctor doctor : doctorList){
@@ -25,6 +25,7 @@ public class DataImport1130 {
             result.append(doctor.toString());
             result.append("\r\n");
         }
+
         File doctor=new File("C:\\Users\\NFYX\\Desktop\\doctor.txt");
         File userDept=new File("C:\\Users\\NFYX\\Desktop\\userDept.txt");
         writeToTxt(result,doctor);
