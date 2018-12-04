@@ -8,14 +8,15 @@
 </head>
 <body>
 <script>
-
     $('document').ready(function () {
-       $('p.asd').remove();
-
+        $('.asd').click(function () {
+            $('.qwe').load("/1204.html",{asd:"asd",qwe:"qwe"});
+        });
     });
+
+
 </script>
-  <p class="asd">asd</p>
-  <p class="asd">asd</p>
-  <p >asd</p>
+    <button class="asd">a</button>
+<div class="qwe"></div>
 </body>
 </html>

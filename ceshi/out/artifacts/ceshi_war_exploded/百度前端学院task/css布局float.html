@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="1"/>
+    <title>css布局float</title>
+    <style>
+        .img1{
+            width: 300px;
+            height: 300px;
+            float:left;
+        }
+        .image1{
+            border:1px red solid;
+            box-sizing:border-box;
+            padding: 0;
+            margin :0;
+            overflow:auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="image1">
+        <img class="img1" src="../1111.jpg" alt="1111"/>
+        初次接触“脱离文档流”的朋友可以这样理解：div是父亲，img是它的儿子，
+        原本好好的父子关系，原本爷俩可以体面的展示一个包含关系的效果。直到有一天，
+        img被设置了float。老天爷（浏览器）规定，任何float元素都不允许再呆在自己的家族中，
+        于是img被逐出家门，断绝和div父子关系。于是乎，div没有了img儿子，也就不能再展示这种父子的包含关系，
+        于是两者就各过各的，互不相干。——这样一说，容易理解了吧？
+    </div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta http-equiv="refresh" content="0.3">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <style>
+        .hangnei{
+            text-align: center;
+        }
+        .dingkuan{
+            width:200px;
+            border:red 1px solid;
+            margin:0 auto;
+            text-align: center;
+        }
+        table{
+            margin:0 auto;
+        }
+        .budingkuan1{
+            border:red 1px solid;
+        }
+        .budingkuan2{
+            border:red 1px solid;
+            display:inline;
+        }
+        .erdebaba{
+            text-align: center;
+          }
+        .budingkuan3{
+            float: left;
+            position:relative;
+            left:50%;
+        }
+        .sandeerzi{
+            position: relative;
+            left: -50%;
+            border:red 1px solid;
+        }
+        .chuizhifu{
+            width:200px;
+            height:100px;
+            border:red 1px solid;
+        }
+        .chuizhizi{
+            line-height:100px;
+            background: green;
+        }
+    </style>
+</head>
+<body>
+    <!--行内元素的居中-->
+    <div class="hangnei">
+        <span>我是行内元素</span>
+    </div>
+
+    <!--块级元素只需要满足2点就可以居中，1：定宽，2:左右外边距为auto-->
+    <!--所以定宽块级元素只需要设置margin就可以了-->
+    <div class="dingkuan">
+        我是定宽块级元素
+    </div>
+
+    <!--不定宽块级元素的居中有3种方式-->
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    <div class="budingkuan1">
+                        我是不定宽元素1，使用放入table的方式
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!--第二种方式是把块级元素变成行级元素，就可以使用行级元素的方法-->
+    <div class="erdebaba">
+        <div class="budingkuan2">
+            我是不定宽元素2，使用的是变成行级元素的方法
+        </div>
+    </div>
+
+    <!--第三种方式是使用浮动加相对定位的方式进行居中-->
+    <div class="budingkuan3">
+        <div class="sandeerzi">我是不定宽元素3,使用的是浮动加相对定位的方式进行居中</div>
+    </div>
+
+    <br>
+    <!--单行元素的垂直居中，设置父元素的高度跟子元素行高一致,可以实现，但是如果字数长度超过父元素的宽度，就会文字溢出-->
+    <div class="chuizhifu">
+        <span class="chuizhizi">我是单行元素我是单行元素</span>
+    </div>
+
+</body>
+</html>

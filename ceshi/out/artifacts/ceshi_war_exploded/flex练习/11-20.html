@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex练习</title>
+    <style>
+        .container{
+            border:red 1px solid;
+            width:100%;
+            height:500px;
+            display: flex;
+
+
+
+            /*justify-content:center;*/
+            /*center:居中，flex-start：左对齐，flex-end：右对齐*/
+            /*space-between：外边距均匀在项之间，space-around:项之间的边距是外边距的2倍*/
+
+            /*align-items:center;*/
+            /*flex-start:顶部对齐，flex-end:底部对齐*/
+            /*center：居中，baseline:项目对齐基线*/
+            /*stretch：项目被拉伸以适应容器,默认值，当项目没有设置高度时拉伸*/
+
+            /*flex-direction:row;*/
+            /*row:跟文本方向一样，row-reverse:跟文本方向相反*/
+            /*column:项目从上到下放置，column-reverse：项目从下到上*/
+            /*当方向设置为反转时，项目的start跟end也会反转*/
+            /*当方向设置为列时，justify-content是垂直方向，align-items是水平方向*/
+
+            /*order:1*/
+            /*order默认都是0，负数排在前面，正数排在后面*/
+
+            /*对个别项目设置垂直分布：align-self*/
+
+            /*flex-wrap:wrap;*/
+            /*nowrap:一个项目一行*/
+            /*wrap：按顺序自动分行*/
+            /*wrap-reverse:反向自动分行*/
+
+            /*flex-flow:row wrap;*/
+            /*是flex-direction和flex-wrap的结合，2个属性用空格隔开*/
+
+            /*当项目很多，而且设置自动分行的时候，可以设置分割的基线*/
+            /*align-content:center;*/
+            /*flex-strat:打包在容器顶部 flex-end:打包在容器底部*/
+            /*center：垂直中心*/
+            /*space-between：行间距离相等*/
+            /*space-around:线条左右间距相等*/
+            /*stretch:默认，拉伸*/
+
+            /*flex-grow:x;*/
+            /*为多个项目设置比例，grow为3的是grow为1的3倍*/
+
+        }
+        .item{
+            border:1px green solid;
+            flex-grow:1
+        }
+        .asd{
+            flex-grow:2;
+            border:1px green solid;
+
+        }
+        .qwe{
+            flex-grow:1;
+            border:1px green solid;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+       <div class="qwe"></div>
+       <div class="item"></div>
+       <div class="asd"></div>
+
+    </div>
+
+</body>
+</html>

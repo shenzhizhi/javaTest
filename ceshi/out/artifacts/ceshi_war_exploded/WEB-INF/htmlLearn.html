@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="">
+    <title>Title</title>
+    <style>
+        span{color:red;}
+        div{color:blue;}
+    </style>
+</head>
+<body>
+
+<em>斜体（行级元素）</em><br/>
+<strong>粗体（行级元素）</strong><br/>
+<span>自定义字体块（块级元素）</span>
+<h1>标题：最大（块级）</h1>
+<h6>标题：最小（块级）</h6>
+<p>段落：paragraph（块级）</p>
+<q>引用：quote（块级）</q>
+<blockquote>块级引用</blockquote>
+br换行<br/>
+& nbsp;空格 <br>
+分割线<hr>
+<address>address（块级）
+    地址：广东省汕头市</address>
+<code>单行代码（行级）：System.out.println("asd");</code>
+<pre>
+    pre（块级）
+    多行代码：空格换行保留
+    public static void main(String[] args){
+        System.out.println("asd");
+    }
+</pre>
+<ul>
+    <li>无序列表</li>
+    <li>a</li>
+    <li>b</li>
+    <li>c</li>
+</ul>
+<ol>
+    <li>有序列表</li>
+    <li>a</li>
+    <li>b</li>
+    <li>c</li>
+</ol>
+<div>自定义块</div>
+<table summary="语义，可被浏览器检索，但是用户看不到">
+    <caption>表格名称</caption>
+    <tbody>
+        <th>名字</th>
+        <th>年龄</th>
+        <th>性别</th>
+        <tr>
+            <td>张三</td>
+            <td>12</td>
+            <td>男</td>
+        </tr><tr>
+            <td>李四</td>
+            <td>13</td>
+            <td>男</td>
+        </tr><tr>
+            <td>张五</td>
+            <td>11</td>
+            <td>男</td>
+        </tr>
+    </tbody>
+</table>
+<a href="http://www.baidu.com" title="标题" target="_blank" >asd</a>
+<img src="http://img.mukewang.com/52da54ed0001ecfa04120172.jpg" alt="无图显示的文字" title="鼠标悬停"/>
+<form method="post" action="##">
+    名字：value为默认值，只有提示作用<input type="text" name="name">
+    密码：<input type="password" name="password">
+    <button type="submit">提交</button>
+    <p>单选框用name来分组，名字相同的为同一组</p>
+    a<input type="radio" name="x">
+    b<input type="radio" name="x">
+    c<input type="radio" name="x">
+    <p>多选框</p>
+    1<input type="checkbox" name="y">
+    2<input type="checkbox" name="y">
+    3<input type="checkbox" name="y">
+    <p>多选框,点击文字也可以选中,使用checked属性可以默认选中</p>
+    <label for="y1">1</label>
+    <input type="checkbox" checked="checked" id="y1" name="y">
+    <label for="y2">2</label>
+    <input type="checkbox" id="y2" name="y">
+    <label for="y3">3</label>
+    <input type="checkbox"  id="y3" name="y">
+    <input type="reset" name="y">
+</form>
+<label for="tx1">聚焦到文字区域</label>
+<textarea name="tx1" id="tx1" cols="30" rows="10"></textarea>
+<br>
+数字：加上selected属性可以默认选中<select name="se1" id="se1">
+    <option value="">1</option>
+    <option value="">2</option>
+    <option selected="selected">3</option>
+</select>
+</body>
+</html>

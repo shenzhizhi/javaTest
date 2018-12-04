@@ -128,7 +128,28 @@
             $('.asd').parent();
             $('.asd').parents();
             $('.asd').parentsUntil(".div");//介于asd跟div之间的所有父元素
-            //
+            //遍历后代 返回所有后代
+            $('.asd').children();
+            //返回所有同胞siblings 下一个同胞next 上一个同胞prev
+            $('.asd').sibling();
+// ==========================================================================
+            //ajax
+            // load:从服务器加载数据，并把返回的数据放入被选的元素中
+            $('.asd').load("ceshi.html",{a:"a",b:"b"},function () {
+                alert('回调函数，用于方法完成后调用')
+            });
+            //get post
+            $.get("demo.html",function (data,status) {
+                //data是返回的数据，status是返回的状态
+            });
+            $.post("demo.html",{
+                name:"name",
+                city:"asd"
+            },function (data,status) {
+                //返回的data跟状态。
+                }
+            );
+
 
 
         });

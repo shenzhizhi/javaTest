@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="comservlet:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="com.servlet.war">
+      <element id="artifact" artifact-name="comservlet:war exploded" />
+    </root>
+  </artifact>
+</component>
